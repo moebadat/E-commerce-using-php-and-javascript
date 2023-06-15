@@ -1,0 +1,308 @@
+
+/* -------------  CSS Loader  ----------- */
+
+.overlay{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: white;
+	z-index: 10;
+	opacity: 0.7;
+}
+.loader{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border:10px solid #333;
+	position: relative;
+	margin: 0 auto;
+	top:30%;
+	animation:loader 2s linear infinite;
+}
+@keyframes loader{
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+.loader:after{
+	content: "";
+    width: 35px;
+    height: 35px;
+    background: #333;
+    position: absolute;
+    border-radius: 50%;
+    top: -20px;
+    left: 55px;
+}
+.loader:before{
+	content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #333;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: -10px;
+    left: 39px;
+
+}
+
+/* --------- CSS Loader End Here ------------*/
+
+/*body styling*/
+body {
+padding-top:0px;
+padding-bottom: 0px;
+}
+
+
+/*styling the navbar*/
+.navbar{
+	padding-bottom:15px;
+}
+.navbar-header button span{
+	color:grey;
+	background-color:grey;
+}
+.navbar-brand{
+color: white!important;
+padding:20px;
+}
+.nav-link{
+	color: white !important;
+}
+.nav-link:hover{
+  background: grey !important;
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+  -webkit-transition:all 0.5s ease 0s;
+  transition:all 0.5s ease 0s;
+}
+.navbar-nav{
+	padding:5px;
+}
+
+
+/*our background image*/
+.mainImg {
+  /* The image used */
+ 
+  background-image: url("https://www.solidbackgrounds.com/images/2560x1440/2560x1440-wood-brown-solid-color-background.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Center image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+/*styling the homepage header/jumbotron section*/
+.header{
+	justify-content:center;
+	padding-bottom:8%;
+}
+/* jombotron in header*/
+.jumbotron{
+	background-image: url("https://cdn.hipwallpaper.com/i/52/32/UsX9ID.jpg");
+	background-size: cover;
+    padding-top: 16%;
+    padding-bottom: 16%;
+	margin-top: 0px;
+	display: flex;
+	border: 0.20em solid grey;
+	background-blend-mode: darken;
+	}
+	.jumbP{
+		color:#BEBEBE;
+		font-size:25px;
+	}
+	.jumbLink{
+		color:black;
+		font-size:20px;
+	}
+	.link{
+		border:solid grey;
+		border: 2px solid black;
+		padding-top:13px;
+		padding-left:10px;
+        border-radius: 25px;
+		background-color: grey; 
+		  height: 60px;
+		  width: 150px;
+	}
+
+
+/* "styling the about section on the homepage*/
+.about{
+ margin-top:20px;
+ padding: 1em;
+ position: relative;
+ padding-bottom:85px
+}
+.about img{
+ height: 100%;
+ width: 100%;
+ border-radius: 50%;
+ border:solid;
+ border-color:white;
+ margin-bottom:80px;
+}
+.about .desc h3{
+ color: White;
+}
+.about .desc p{
+ line-height:2;
+ color:Grey;
+ margin-bottom:70px;
+ font-size:16px;
+}
+
+
+/* "styling the navigation tile section on the homepage*/
+.tiles{
+	padding-bottom:16%;
+}
+.tile_title h3{
+	color:white;
+}
+.tile_title{
+	border:solid;
+	border-color:grey;
+	background-color:grey;	
+	padding:20px;
+}
+.tile_title:hover{
+  background:#DCDCDC;
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+  -webkit-transition:all 0.5s ease 0s;
+  transition:all 0.5s ease 0s;
+}
+.tile_heading{
+	color:white;
+}
+.tile_title p a{
+	color:#7cfc00;
+	font-size:15px;
+}
+
+
+/* "styling the heading of the content tiles section on the homepage*/
+.contentTilesRow{
+	padding-bottom:9%;	
+}
+.contentTileHead{
+  margin-bottom: 60px;
+}
+.contentTileHead h4{
+  font-weight: 700;
+  padding-bottom: 0px;
+  color:white;
+  padding-top:58px;
+  text-align: center;
+  font-size:34px;
+  letter-spacing: 0.3px;
+  padding-bottom:14px;
+} 
+.contentTileHead p{
+  color:white;
+  font-size: 25px;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom:12px;
+}
+
+/* styling the content tiles ection on the homepage*/
+.item{
+  background:grey;
+  text-align: left;
+  padding:30px 25px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.07);
+  border-radius: 20px;
+   margin-top: 20px;
+  border:5px solid rgba(0,0,0,0.07);
+  -webkit-transition:all 0.5s ease 0s;
+  transition:all 0.5s ease 0s;
+}
+.item:hover{
+  background:white;
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+  -webkit-transition:all 0.5s ease 0s;
+  transition:all 0.5s ease 0s;
+}
+.item .icon{
+  font-size:40px;
+  margin-bottom: 25px;
+  color:#f91942;
+  width:90px;
+  height:90px;
+  line-height: 96px;
+  border-radius: 50px;
+}
+.item h6{
+	font-size:23px;
+}
+.item p{
+  font-size: 15px;
+  line-height: 26px;
+}
+
+/*styling the hading for the products section*/
+.product_head h4{
+  font-size:40px !important;
+  padding-bottom: 20px;
+  color:white;
+  justify-content:center;
+  padding-top:70px;
+  margin-left:30px;
+} 
+
+/*fill space at the bottom of  page*/
+.aboutspan{
+	padding:55px;
+}
+.servicespan{
+	padding:20px;
+}
+.c_orderspan{
+	padding:150px;
+}
+.cartspan{
+	padding:150px;
+}
+.loginspan{
+	padding:147px;
+}
+.successspan{
+	padding:45px;
+}
+
+.nav-stacked li{
+	color:grey;
+	background-color:tan;
+}
+.nav-stacked li a{
+	color:grey;
+}
+
+
+.footer p{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  height:50px;
+  padding-top:15px;
+  margin-bottom:0;
+ 
+}
+
+
+
+
